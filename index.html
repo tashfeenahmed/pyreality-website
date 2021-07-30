@@ -8,6 +8,9 @@
     <title>pyReality</title>
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
 
 <link href="https://cdn.rawgit.com/mrdoob/three.js/master/build/three.min.js" rel="stylesheet">
     
@@ -15,59 +18,23 @@
     <!-- Bootstrap core CSS -->
 <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
 
     
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
-    <style type="text/css">
 
-body,
-html {
-  /*cursor: default;*/
-  /*overflow: hidden;*/
-  /*margin: 0;*/
-  /*background: none;*/
-}
-canvas {
-  /*position: absolute;*/
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-}
-.myheader {
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  position: absolute;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-
-    </style>
   </head>
   <body>
   <div class="col-lg-12">
 <div id="canvascontainer">
 <div class="myheader">
-  <h1>pyReality</h1>
-  <p>Mixed Reality in Jupyter</p>
+  <h1>Make your data immersive</h1>
+  <p class="mt-3 fs-5">pyReality is an open source data visualisation tool for large-scale data sets.</p>
+  <div class="mt-5">
+    <a href="https://github.com/tashfeenahmed/pyreality" class="btn btn-primary btn-lg px-4">Get Started</a>
+    <a href="https://github.com/tashfeenahmed/pyreality" class="btn btn-outline-light btn-lg px-4">Github</a>
+  </div>
+      
 </div>
 </div>
 
@@ -75,33 +42,49 @@ canvas {
 <div class="col-lg-8 mx-auto p-3 py-md-5">
   <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
     <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-      <span class="fs-4"><svg width="254" height="59" viewBox="0 0 254 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M20 19.9998H0V38.9998V58.9998H20H39V38.9998H20V19.9998Z" fill="#00B2F4"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 19.9999L19.9999 19.9999L19.9999 -6.45877e-06L0 19.9999Z" fill="#14068A"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M39 39L59 39L59 20L59 0L39 -1.74846e-06L20 -3.40949e-06L20 20L39 20L39 39Z" fill="#F5007F"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M59 38.9999L39.0001 38.9999L39.0001 58.9998L59 38.9999Z" fill="#14068A"/>
-<path d="M75.3521 49.4H80.6441V38.06H81.1481C82.2401 39.824 84.0881 41.588 87.7841 41.588C92.9921 41.588 97.3601 36.968 97.3601 30.584C97.3601 24.2 92.9921 19.58 87.7841 19.58C84.0881 19.58 82.2401 21.344 81.1481 23.108H80.5601V20.168H75.3521V49.4ZM86.3561 36.884C83.0801 36.884 80.6441 34.532 80.6441 30.584C80.6441 26.636 83.0801 24.284 86.3561 24.284C89.5481 24.284 92.0681 26.552 92.0681 30.584C92.0681 34.616 89.5481 36.884 86.3561 36.884Z" fill="#130D2E"/>
-<path d="M115.281 20.168L109.821 35.12H109.317L103.857 20.168H98.1446L106.797 42.344L103.857 49.4H109.569L120.993 20.168H115.281Z" fill="#130D2E"/>
-<path d="M145.85 20.882C145.85 15.296 141.986 11.642 136.442 11.642H123.506V41H129.05V30.122H133.964L139.382 41H145.514L139.55 29.66C143.33 28.526 145.85 25.334 145.85 20.882ZM129.05 16.682H135.896C138.542 16.682 140.306 18.32 140.306 20.882C140.306 23.444 138.542 25.082 135.896 25.082H129.05V16.682Z" fill="#130D2E"/>
-<path d="M148.043 30.416C148.043 36.884 152.537 41.588 158.753 41.588C164.339 41.588 166.775 38.648 168.203 36.464L163.877 33.944C163.163 35.414 161.609 37.052 158.669 37.052C155.645 37.052 153.671 34.91 153.461 32.138H168.623V30.08C168.623 23.822 164.549 19.58 158.501 19.58C152.369 19.58 148.043 24.116 148.043 30.416ZM153.503 28.442C153.923 25.88 155.477 24.116 158.459 24.116C161.189 24.116 162.869 25.796 163.247 28.442H153.503Z" fill="#130D2E"/>
-<path d="M171.231 24.956L175.515 27.728C176.817 25.544 178.539 24.116 181.311 24.116C184.167 24.116 185.679 25.67 185.679 27.644V28.148L177.699 29.03C173.709 29.45 170.811 31.76 170.811 35.078C170.811 39.068 173.919 41.588 178.623 41.588C183.033 41.588 184.503 39.446 185.175 38.06H185.763V41H190.971V27.686C190.971 22.814 187.275 19.58 181.605 19.58C176.523 19.58 173.709 21.848 171.231 24.956ZM176.355 34.784C176.355 33.566 177.321 32.852 179.295 32.6L185.679 31.844V32.18C185.679 35.036 183.621 37.22 179.925 37.22C177.573 37.22 176.355 36.212 176.355 34.784Z" fill="#130D2E"/>
-<path d="M200.697 11.6H195.405V41H200.697V11.6Z" fill="#130D2E"/>
-<path d="M204.321 14.12C204.321 16.262 205.959 17.732 208.059 17.732C210.159 17.732 211.797 16.262 211.797 14.12C211.797 11.978 210.159 10.508 208.059 10.508C205.959 10.508 204.321 11.978 204.321 14.12ZM210.705 20.168H205.413V41H210.705V20.168Z" fill="#130D2E"/>
-<path d="M213.236 20.168V24.704H218.528V36.968C218.528 39.32 220.292 41 222.644 41H228.356V36.464H224.996C224.24 36.464 223.82 36.044 223.82 35.204V24.704H229.532V20.168H223.82V13.7H218.528V20.168H213.236Z" fill="#130D2E"/>
-<path d="M247.925 20.168L242.465 35.12H241.961L236.501 20.168H230.789L239.441 42.344L236.501 49.4H242.213L253.637 20.168H247.925Z" fill="#130D2E"/>
-</svg>
-</span>
+      <span class="fs-4">
+        <svg width="244" height="51" viewBox="0 0 244 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2883 17.2879H1.725e-06V33.7117H7.55696e-07L0 51H1.725e-06H17.2883H33.7121V33.7117H17.2883V17.2879Z" fill="url(#paint0_linear)"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.000488281 17.2879H17.2877V-0.000228882L-0.000488281 17.2879ZM33.7112 33.7119L33.7119 33.7119L33.7119 51L51.0001 33.7119L50.9994 33.7119L50.9994 17.2881H51.0001L51.0001 -0.000191985L50.9994 -0.00018817L33.7112 -0.000189681L17.288 -0.000198746L17.288 17.2881L33.7112 17.2881V33.7119Z" fill="url(#paint1_linear)"/>
+          <path d="M65.3521 42.4H70.6441V31.06H71.1481C72.2401 32.824 74.0881 34.588 77.7841 34.588C82.9921 34.588 87.3601 29.968 87.3601 23.584C87.3601 17.2 82.9921 12.58 77.7841 12.58C74.0881 12.58 72.2401 14.344 71.1481 16.108H70.5601V13.168H65.3521V42.4ZM76.3561 29.884C73.0801 29.884 70.6441 27.532 70.6441 23.584C70.6441 19.636 73.0801 17.284 76.3561 17.284C79.5481 17.284 82.0681 19.552 82.0681 23.584C82.0681 27.616 79.5481 29.884 76.3561 29.884Z" fill="#130D2E"/>
+          <path d="M105.281 13.168L99.8206 28.12H99.3166L93.8566 13.168H88.1446L96.7966 35.344L93.8566 42.4H99.5686L110.993 13.168H105.281Z" fill="#130D2E"/>
+          <path d="M135.85 13.882C135.85 8.29599 131.986 4.64199 126.442 4.64199H113.506V34H119.05V23.122H123.964L129.382 34H135.514L129.55 22.66C133.33 21.526 135.85 18.334 135.85 13.882ZM119.05 9.68199H125.896C128.542 9.68199 130.306 11.32 130.306 13.882C130.306 16.444 128.542 18.082 125.896 18.082H119.05V9.68199Z" fill="#130D2E"/>
+          <path d="M138.043 23.416C138.043 29.884 142.537 34.588 148.753 34.588C154.339 34.588 156.775 31.648 158.203 29.464L153.877 26.944C153.163 28.414 151.609 30.052 148.669 30.052C145.645 30.052 143.671 27.91 143.461 25.138H158.623V23.08C158.623 16.822 154.549 12.58 148.501 12.58C142.369 12.58 138.043 17.116 138.043 23.416ZM143.503 21.442C143.923 18.88 145.477 17.116 148.459 17.116C151.189 17.116 152.869 18.796 153.247 21.442H143.503Z" fill="#130D2E"/>
+          <path d="M161.231 17.956L165.515 20.728C166.817 18.544 168.539 17.116 171.311 17.116C174.167 17.116 175.679 18.67 175.679 20.644V21.148L167.699 22.03C163.709 22.45 160.811 24.76 160.811 28.078C160.811 32.068 163.919 34.588 168.623 34.588C173.033 34.588 174.503 32.446 175.175 31.06H175.763V34H180.971V20.686C180.971 15.814 177.275 12.58 171.605 12.58C166.523 12.58 163.709 14.848 161.231 17.956ZM166.355 27.784C166.355 26.566 167.321 25.852 169.295 25.6L175.679 24.844V25.18C175.679 28.036 173.621 30.22 169.925 30.22C167.573 30.22 166.355 29.212 166.355 27.784Z" fill="#130D2E"/>
+          <path d="M190.697 4.59999H185.405V34H190.697V4.59999Z" fill="#130D2E"/>
+          <path d="M194.321 7.11999C194.321 9.26199 195.959 10.732 198.059 10.732C200.159 10.732 201.797 9.26199 201.797 7.11999C201.797 4.97799 200.159 3.508 198.059 3.508C195.959 3.508 194.321 4.97799 194.321 7.11999ZM200.705 13.168H195.413V34H200.705V13.168Z" fill="#130D2E"/>
+          <path d="M203.236 13.168V17.704H208.528V29.968C208.528 32.32 210.292 34 212.644 34H218.356V29.464H214.996C214.24 29.464 213.82 29.044 213.82 28.204V17.704H219.532V13.168H213.82V6.69999H208.528V13.168H203.236Z" fill="#130D2E"/>
+          <path d="M237.925 13.168L232.465 28.12H231.961L226.501 13.168H220.789L229.441 35.344L226.501 42.4H232.213L243.637 13.168H237.925Z" fill="#130D2E"/>
+          <defs>
+          <linearGradient id="paint0_linear" x1="16.856" y1="17.2879" x2="16.856" y2="51" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#D90070"/>
+          <stop offset="1" stop-color="#FF6058"/>
+          </linearGradient>
+          <linearGradient id="paint1_linear" x1="25.4998" y1="-0.000228882" x2="25.4998" y2="51" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#FF6058"/>
+          <stop offset="1" stop-color="#D90070"/>
+          </linearGradient>
+          </defs>
+        </svg>
+
+      </span>
     </a>
   </header>
 
   <main>
-    <h1>Create immersive visualisations in Jupyter</h1>
-    <p class="fs-5 col-md-8">Quickly and easily get started with pyReality by using the examples provided in the documentation.</p>
+    <div class="text-center">
 
+      <h1>Make your data immersive</h1>
+      <p class="fs-5">Quickly and easily get started with pyReality by using the examples provided in the documentation.</p>
+      <img src="assets/images/jupyter.png" style="max-width: 800px;" alt="Jupyter Notebooks" />
+
+    </div>
+    
+<!-- 
     <div class="mb-5">
       <a href="https://github.com/tashfeenahmed/pyreality" class="btn btn-primary btn-lg px-4">Read Documentation</a>
     </div>
-
+ -->
     <hr class="col-3 col-md-2 mb-5">
 
     <div class="row g-5">

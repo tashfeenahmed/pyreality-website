@@ -1,3 +1,24 @@
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+canvas {
+  /*position: absolute;*/
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.myheader {
+  z-index: 1;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .icon-list {
   padding-left: 0;
   list-style: none;
@@ -24,11 +45,14 @@ a {
 }
 
 .btn-primary {
-  background-color: #F5007F;
-  border-color: #F5007F;
+  /*background-color: #F5007F;*/
+  border-color: rgb(255,255,255,0);
+  background: rgb(255,96,88);
+  background: linear-gradient(45deg, rgba(255,96,88,1) 0%, rgba(217,0,112,1) 100%);
 }
 
 .btn-primary:hover {
-  background-color: #14068A;
-  border-color: #14068A;
+  border-color: rgb(255,255,255,0);
+  background: rgb(255,96,88);
+  background: linear-gradient(45deg, rgba(255,96,88,1) 0%, rgba(255,96,88,1) 100%);
 }

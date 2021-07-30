@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Tashfeen Ahmed">
+    <title>pyReality</title>
+
+
+<link href="https://cdn.rawgit.com/mrdoob/three.js/master/build/three.min.js" rel="stylesheet">
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+    <style type="text/css">
+
+body,
+html {
+  /*cursor: default;*/
+  /*overflow: hidden;*/
+  /*margin: 0;*/
+  /*background: none;*/
+}
+canvas {
+  /*position: absolute;*/
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.myheader {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+    </style>
+  </head>
+  <body>
+  <div class="col-lg-12">
+<div id="canvascontainer">
+<div class="myheader">
+  <h1>pyReality</h1>
+  <p>Mixed Reality in Jupyter Notebooks</p>
+</div>
+</div>
+
+  </div>
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+  <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+    <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+      <span class="fs-4">pyReality</span>
+    </a>
+  </header>
+
+  <main>
+    <h1>Get started with pyReality</h1>
+    <p class="fs-5 col-md-8">Quickly and easily get started with pyReality by using the examples provided in the documentation.</p>
+
+    <div class="mb-5">
+      <a href="https://github.com/tashfeenahmed/pyreality" class="btn btn-primary btn-lg px-4">Read Documentation</a>
+    </div>
+
+    <hr class="col-3 col-md-2 mb-5">
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <h2>Examples</h2>
+        <p>View these data visualisation examples in immersive reality to see what pyReality can do.</p>
+        <ul class="icon-list">
+          <li><a href="https://pyreality.herokuapp.com/mr/plot/aflwhpt8" rel="noopener" target="_blank">Scatterplot</a></li>
+          <li><a href="https://pyreality.herokuapp.com/mr/vis/uybrpr2d" rel="noopener" target="_blank">Bar chart</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <h2>Guides</h2>
+        <p>Read more detailed instructions and documentation on using or contributing to pyReality.</p>
+        <ul class="icon-list">
+          <li><a href="https://github.com/tashfeenahmed/pyreality">Read Documentation</a></li>
+          <li><a href="https://pypi.org/project/pyreality">View on PyPi</a></li>
+          <li><a href="https://github.com/tashfeenahmed/pyreality/issues">Report an Issue</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="pt-5 my-5 text-muted border-top">
+    Tashfeen Ahmed &middot; Design Informatics &copy; 2021
+  </footer>
+</div>
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/build/three.min.js"></script>
+    <script type="text/javascript">
+      // PointerLockControls by MrDoob
+THREE.PointerLockControls = function ( camera ) {
+  var scope = this;
+  camera.rotation.set( 0, 0, 0 );
+  var pitchObject = new THREE.Object3D();
+  pitchObject.add( camera );
+  var yawObject = new THREE.Object3D();
+  yawObject.position.y = 10;
+  yawObject.add( pitchObject );
+  var PI_2 = Math.PI / 2;
+  var onMouseMove = function ( event ) {
+    if ( scope.enabled === false ) return;
+    var movementX = event.movementX || event.mozMovementX || event.webkitMovementX || 0;
+    var movementY = event.movementY || event.mozMovementY || event.webkitMovementY || 0;
+    yawObject.rotation.y -= movementX * 0.002;
+    pitchObject.rotation.x -= movementY * 0.002;
+    pitchObject.rotation.x = Math.max( - PI_2, Math.min( PI_2, pitchObject.rotation.x ) );
+  };
+  this.dispose = function() {
+    document.removeEventListener( 'mousemove', onMouseMove, false );
+  };
+  document.addEventListener( 'mousemove', onMouseMove, false );
+  this.enabled = false;
+  this.getObject = function () {
+    return yawObject;
+  };
+  this.getDirection = function() {
+    var direction = new THREE.Vector3( 0, 0, - 1 );
+    var rotation = new THREE.Euler( 0, 0, 0, "YXZ" );
+    return function( v ) {
+      rotation.set( pitchObject.rotation.x, yawObject.rotation.y, 0 );
+      v.copy( direction ).applyEuler( rotation );
+      return v;
+    };
+  }();
+};
+//
+
+var scene = new THREE.Scene();
+scene.background = new THREE.Color("rgb(0,0,0)");
+var camera = new THREE.PerspectiveCamera( 95, window.innerWidth/window.innerHeight, 0.1, 20 );
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth,window.innerHeight);
+document.getElementById("canvascontainer").appendChild(renderer.domElement);
+
+var controls = new THREE.PointerLockControls(camera);
+controls.enabled = true;
+scene.add(controls.getObject());
+controls.getObject().position.set(0,0,0);
+
+var geometry = new THREE.BoxGeometry(10,10,10,12,12,12);
+var material = new THREE.MeshBasicMaterial({
+    color: 0x303030,
+    wireframe: true
+});
+
+var cube = new THREE.Mesh(geometry,material);
+scene.add(cube);
+
+function onWindowResize() {
+  camera.aspect = window.innerWidth/window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth,window.innerHeight);
+}
+
+window.addEventListener( 'resize', onWindowResize, false );
+
+var animate = function () {
+  requestAnimationFrame(animate);
+  renderer.render(scene, camera);
+};
+
+animate();
+    </script>
+      
+  </body>
+</html>

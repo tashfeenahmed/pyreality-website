@@ -22,3 +22,13 @@ a {
   color: #303030;
   text-decoration: none;
 }
+
+.btn-primary {
+  background-color: #F5007F;
+  border-color: #F5007F;
+}
+
+.btn-primary:hover {
+  background-color: #14068A;
+  border-color: #14068A;
+}

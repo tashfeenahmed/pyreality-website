@@ -108,6 +108,10 @@ a {
     display:inline-block; float: right;
   }
 
+  .loader {
+     cursor: -webkit-grab; cursor: grab;
+  }
+
 @media only screen and (max-width: 768px) {
   html {
     width: 100vw !important;

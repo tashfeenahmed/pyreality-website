@@ -1,13 +1,19 @@
 body {
   font-family: 'Space Grotesk', sans-serif;
+  --color-text: #fff;
+  --color-bg: #504f4f;
+  --color-link: #666;
+  --color-link-hover: #fff;
+  --color-top-right: #222;
+  --color-bottom-left: #000;
 }
 
-canvas {
+/*canvas {*/
   /*position: absolute;*/
-  z-index: 0;
+/*  z-index: 0;
   width: 100%;
-  height: 100%;
-}
+  height: 100%;*/
+/*}*/
 .myheader {
   z-index: 1;
   color: #fff;
@@ -39,6 +45,19 @@ canvas {
 }
 
 
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 4px;
+}
+
+
 a {
   color: #303030;
   text-decoration: none;
@@ -55,4 +74,38 @@ a {
   border-color: rgb(255,255,255,0);
   background: rgb(255,96,88);
   background: linear-gradient(45deg, rgba(255,96,88,1) 0%, rgba(255,96,88,1) 100%);
+}
+
+.bg-gradient-orange {
+  background: rgb(255,96,88);
+  background: linear-gradient(45deg, rgba(255,96,88,1) 0%, rgba(255,96,88,1) 100%);
+}
+
+.loader {
+  background: linear-gradient(-135deg, var(--color-top-right), var(--color-bottom-left));
+  top: 0;*/
+  transition: opacity 600ms;
+}
+
+.bg-dark {
+  background-color: #000000 !important;
+  color: white;
+}
+
+.btn-outline-primary {
+  color: rgb(255,96,88);
+  border-color: rgb(255,96,88);
+  border-color: linear-gradient(45deg, rgba(255,96,88,1) 0%, rgba(217,0,112,1) 100%);
+}
+
+.btn-outline-primary:hover {
+  border-color: rgb(255,255,255,0);
+  background: rgb(255,96,88);
+  background: linear-gradient(45deg, rgba(255,96,88,1) 0%, rgba(255,96,88,1) 100%);
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    width: 100vw !important;
+  }
 }

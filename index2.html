@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
 
-
+<link href="https://cdn.rawgit.com/mrdoob/three.js/master/build/three.min.js" rel="stylesheet">
     
 
     <!-- Bootstrap core CSS -->
@@ -23,30 +23,25 @@
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
 
-    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
   </head>
   <body>
-  <div class="col-lg-12 col-md-12">
-
-    
+  <div class="col-lg-12">
 <div id="canvascontainer">
-
-      <div class="loader"></div>
 <div class="myheader">
   <h1>Make your data immersive</h1>
   <p class="mt-3 fs-5">pyReality is an open source data visualisation tool for large-scale data sets.</p>
   <div class="mt-5">
-    <a href="https://pypi.org/project/pyreality" target="_blank" class="btn btn-primary btn-lg px-4">Get Started</a>
-    <a href="#mymain" class="btn btn-outline-light btn-lg px-4">Learn More ↓</a>
+    <a href="https://github.com/tashfeenahmed/pyreality" class="btn btn-primary btn-lg px-4">Get Started</a>
+    <a href="https://github.com/tashfeenahmed/pyreality" class="btn btn-outline-light btn-lg px-4">Github</a>
   </div>
       
 </div>
 </div>
 
   </div>
-<div class="col-lg-8 mx-auto p-3 py-md-5" id="mymain">
-  <header class="pb-3 mb-5 border-bottom">
-    <a href="/" class="" style="display:inline-block;">
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+  <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+    <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
       <span class="fs-4">
         <svg width="244" height="51" viewBox="0 0 244 51" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2883 17.2879H1.725e-06V33.7117H7.55696e-07L0 51H1.725e-06H17.2883H33.7121V33.7117H17.2883V17.2879Z" fill="url(#paint0_linear)"/>
@@ -74,107 +69,55 @@
 
       </span>
     </a>
-    <div class="text-right" style="display:inline-block; float: right;">
-      <a href="https://pypi.org/project/pyreality" target="_blank" style="margin-left: 10px;">Install</a>
-      <a href="https://github.com/tashfeenahmed/pyreality" target="_blank" style="margin-left: 10px;">GitHub</a>
-      <a href="https://github.com/tashfeenahmed/pyreality/issues" target="_blank" style="margin-left: 10px;">Report an Issue</a>
-    </div>
   </header>
 
   <main>
     <div class="text-center">
 
       <h1>Make your data immersive</h1>
-      <p class="fs-5 mt-3">Quickly and easily get started with pyReality by using the examples provided in the documentation.</p>
-
-      <div class="mt-4 mb-4">
-        <a href="https://pypi.org/project/pyreality" target="_blank" class="btn btn-primary btn-lg">Get Started</a>
-        <a href="https://github.com/tashfeenahmed/pyreality" target="_blank" class="btn btn-outline-primary btn-lg">GitHub</a>
-      </div>
-
+      <p class="fs-5">Quickly and easily get started with pyReality by using the examples provided in the documentation.</p>
       <img src="assets/images/jupyter.png" style="max-width: 800px;" alt="Jupyter Notebooks" />
 
     </div>
     
-
+<!-- 
+    <div class="mb-5">
+      <a href="https://github.com/tashfeenahmed/pyreality" class="btn btn-primary btn-lg px-4">Read Documentation</a>
+    </div>
+ -->
 
 
   <div class="container px-4 py-5 text-center" id="featured-3">
     <h2 class="pb-2">Data Scientist?</h2>
     <p class="pb-2 fs-5">Rapidly visualise data in immersive environments</p>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient-orange">
-          <i data-eva="bar-chart-outline" data-eva-fill="#ffffff" data-eva-height="32" data-eva-width="32"></i>
+          <i data-eva="github" data-eva-fill="#ffffff" data-eva-height="32" data-eva-width="32"></i>
         </div>
-        <h4>Prototyping</h4>
+
+    
+        <h2>Prototyping</h2>
         <p class="lh-lg">Rapidly create 3D immersive and stereoscopic data visualisations from your Jupyter Notebooks interface.</p>
       </div>
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient-orange">
-          <i data-eva="settings-outline" data-eva-fill="#ffffff" data-eva-height="32" data-eva-width="32"></i>
+          <i data-eva="github" data-eva-fill="#ffffff" data-eva-height="32" data-eva-width="32"></i>
         </div>
-        <h4>Interaction</h4>
+        <h2>Interaction</h2>
         <p class="lh-lg">Visualisations created with pyReality can be controlled from the Jupyter Notebooks interface while being viewed via an HMD.</p>
       </div>
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient-orange">
-          <i data-eva="flash-outline" data-eva-fill="#ffffff" data-eva-height="32" data-eva-width="32"></i>
+          <i data-eva="github" data-eva-fill="#ffffff" data-eva-height="32" data-eva-width="32"></i>
         </div>
-        <h4>Performance</h4>
-        <p class="lh-lg">Built with VRIA, D3.js and BabylonJs, pyReality utilises WebGL to render large datasets quickly and efficiently.</p>
+        <h2>Performance</h2>
+        <p class="lh-lg">Built with D3.js and BabylonJs, pyReality utilises WebGL to render large datasets quickly and efficiently.</p>
       </div>
-
     </div>
   </div>
 
-</main>
-
-</div>
-
-
-<div class="col-lg-12 mx-auto">
-
-
-  <div class=" py-5 text-center bg-dark">
-    <div class="col-lg-8 mx-auto p-3 py-md-5">
-    <h2 class="pb-2">Visualisation Types</h2>
-    <p class="pb-2 fs-5">Choose from three visualisation types based on your data and analysis requirements.</p>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-
-      <div class="feature col">
-        <div class="feature-icon bg-primary bg-gradient-orange">
-          <i data-eva="eye-outline" data-eva-fill="#ffffff" data-eva-height="32" data-eva-width="32"></i>
-        </div>
-        <h4>Immersive Scatterplot</h4>
-        <p class="lh-lg">Rapidly create 3D immersive and stereoscopic data visualisations from your Jupyter Notebooks interface.</p>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon bg-primary bg-gradient-orange">
-          <i data-eva="bar-chart-outline" data-eva-fill="#ffffff" data-eva-height="32" data-eva-width="32"></i>
-        </div>
-        <h4>Stereoscopic Bar Chart</h4>
-        <p class="lh-lg">Visualisations created with pyReality can be controlled from the Jupyter Notebooks interface while being viewed via an HMD.</p>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon bg-primary bg-gradient-orange">
-          <i data-eva="cube-outline" data-eva-fill="#ffffff" data-eva-height="32" data-eva-width="32"></i>
-        </div>
-        <h4>Stereoscopic Scatterplot</h4>
-        <p class="lh-lg">Built with VRIA, D3.js and BabylonJs, pyReality utilises WebGL to render large datasets quickly and efficiently.</p>
-      </div>
-
-    </div>
-
-    </div>
-  </div>
-
-</div>
-
-
-<div class="col-lg-8 mx-auto p-3 py-md-5">
-
+    <hr class="col-3 col-md-2 mb-5">
 
     <div class="row g-5">
       <div class="col-md-6">
@@ -190,13 +133,13 @@
         <h2>Guides</h2>
         <p>Read more detailed instructions and documentation on using or contributing to pyReality.</p>
         <ul class="icon-list">
-          <li><a href="https://github.com/tashfeenahmed/pyreality" target="_blank">Read Documentation</a></li>
-          <li><a href="https://pypi.org/project/pyreality" target="_blank">View on PyPi</a></li>
-          <li><a href="https://github.com/tashfeenahmed/pyreality/issues" target="_blank">Report an Issue</a></li>
+          <li><a href="https://github.com/tashfeenahmed/pyreality">Read Documentation</a></li>
+          <li><a href="https://pypi.org/project/pyreality">View on PyPi</a></li>
+          <li><a href="https://github.com/tashfeenahmed/pyreality/issues">Report an Issue</a></li>
         </ul>
       </div>
     </div>
-
+  </main>
   <footer class="pt-5 my-5 text-muted border-top">
     Tashfeen Ahmed &middot; Design Informatics &copy; 2021
   </footer>
@@ -204,19 +147,90 @@
 
 
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="https://cdn.rawgit.com/mrdoob/three.js/master/build/three.min.js"></script> -->
-    
-    <script src="assets/dist/js/three.min.js"></script>
-    <script src="assets/dist/js/OrbitControls.js"></script>
-    <script src="assets/dist/js/fast-simplex-noise.js"></script>
-    <script src="assets/dist/js/herovis.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/build/three.min.js"></script>
+
   
 
     <script src="https://unpkg.com/eva-icons"></script>
     <script>
-      eva.replace();
+      eva.replace()
     </script>
 
+    <script type="text/javascript">
+      // PointerLockControls by MrDoob
+THREE.PointerLockControls = function ( camera ) {
+  var scope = this;
+  camera.rotation.set( 0, 0, 0 );
+  var pitchObject = new THREE.Object3D();
+  pitchObject.add( camera );
+  var yawObject = new THREE.Object3D();
+  yawObject.position.y = 10;
+  yawObject.add( pitchObject );
+  var PI_2 = Math.PI / 2;
+  var onMouseMove = function ( event ) {
+    if ( scope.enabled === false ) return;
+    var movementX = event.movementX || event.mozMovementX || event.webkitMovementX || 0;
+    var movementY = event.movementY || event.mozMovementY || event.webkitMovementY || 0;
+    yawObject.rotation.y -= movementX * 0.002;
+    pitchObject.rotation.x -= movementY * 0.002;
+    pitchObject.rotation.x = Math.max( - PI_2, Math.min( PI_2, pitchObject.rotation.x ) );
+  };
+  this.dispose = function() {
+    document.removeEventListener( 'mousemove', onMouseMove, false );
+  };
+  document.addEventListener( 'mousemove', onMouseMove, false );
+  this.enabled = false;
+  this.getObject = function () {
+    return yawObject;
+  };
+  this.getDirection = function() {
+    var direction = new THREE.Vector3( 0, 0, - 1 );
+    var rotation = new THREE.Euler( 0, 0, 0, "YXZ" );
+    return function( v ) {
+      rotation.set( pitchObject.rotation.x, yawObject.rotation.y, 0 );
+      v.copy( direction ).applyEuler( rotation );
+      return v;
+    };
+  }();
+};
+//
+
+var scene = new THREE.Scene();
+scene.background = new THREE.Color("rgb(0,0,0)");
+var camera = new THREE.PerspectiveCamera( 95, window.innerWidth/window.innerHeight, 0.1, 20 );
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth,window.innerHeight);
+document.getElementById("canvascontainer").appendChild(renderer.domElement);
+
+var controls = new THREE.PointerLockControls(camera);
+controls.enabled = true;
+scene.add(controls.getObject());
+controls.getObject().position.set(0,0,0);
+
+var geometry = new THREE.BoxGeometry(10,10,10,12,12,12);
+var material = new THREE.MeshBasicMaterial({
+    color: 0x303030,
+    wireframe: true
+});
+
+var cube = new THREE.Mesh(geometry,material);
+scene.add(cube);
+
+function onWindowResize() {
+  camera.aspect = window.innerWidth/window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth,window.innerHeight);
+}
+
+window.addEventListener( 'resize', onWindowResize, false );
+
+var animate = function () {
+  requestAnimationFrame(animate);
+  renderer.render(scene, camera);
+};
+
+animate();
+    </script>
       
   </body>
 </html>

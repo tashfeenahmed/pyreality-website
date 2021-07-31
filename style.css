@@ -65,13 +65,13 @@ a {
 
 .btn-primary {
   /*background-color: #F5007F;*/
-  border-color: rgb(255,255,255,0);
+  border-color: rgba(255,255,255,0);
   background: rgb(255,96,88);
   background: linear-gradient(45deg, rgba(255,96,88,1) 0%, rgba(217,0,112,1) 100%);
 }
 
 .btn-primary:hover {
-  border-color: rgb(255,255,255,0);
+  border-color: rgba(255,255,255,0);
   background: rgb(255,96,88);
   background: linear-gradient(45deg, rgba(255,96,88,1) 0%, rgba(255,96,88,1) 100%);
 }

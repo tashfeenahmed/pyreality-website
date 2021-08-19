@@ -35,7 +35,7 @@
             <div class="loader"></div>
             <div class="myheader">
                <h1>Make your data immersive</h1>
-               <p class="mt-3 fs-5">pyReality is a Python library for creating immersive data visualisations.</p>
+               <p class="mt-3 fs-5">pyReality is a Python package for creating immersive data visualisations.</p>
                <div class="mt-5">
                   <a href="https://pypi.org/project/pyreality" target="_blank" class="btn btn-primary btn-lg px-4">Get Started</a>
                   <a href="#mymain" class="btn btn-outline-light btn-lg px-4 mobile-mt-16">Learn More ↓</a>
@@ -80,11 +80,13 @@
          </header>
          <main>
             <div class="text-center">
-               <h1>Holographic Data Visualisations</h1>
-               <p class="fs-5 mt-3">Quickly and easily get started with pyReality by using the examples provided in the documentation.</p>
+               <h1>Holographic Visualisations</h1>
+               <p class="fs-5 mt-3">pyReality is a Python library that lets users rapidly create immersive data visualisations in Jupyter Notebooks. pyReality leverages WebXR to render mixed reality visualisations in browsers making them more accessible. Once created, these visualisations can be viewed using a head-mounted display and configured via the Jupyter Notebooks' interface.
+                  <br/><br/>
+               Get started by using the examples provided in the documentation.</p>
                <div class="mt-4 mb-4">
-                  <a href="https://pypi.org/project/pyreality" target="_blank" class="btn btn-primary btn-lg">Install pyReality</a>
-                  <a href="https://github.com/tashfeenahmed/pyreality" target="_blank" class="btn btn-outline-primary btn-lg">View on GitHub</a>
+                  <a href="https://pypi.org/project/pyreality" target="_blank" class="btn btn-primary btn-xlarge">Install pyReality</a>
+                  <a href="https://github.com/tashfeenahmed/pyreality" target="_blank" class="btn btn-outline-primary btn-xlarge">View on GitHub</a>
                </div>
                <img src="assets/images/jupyter.png" style="width:100%;max-width: 800px;" alt="Jupyter Notebooks" />
             </div>
@@ -96,22 +98,22 @@
                      <div class="feature-icon bg-primary bg-gradient-orange">
                         <i data-eva="bar-chart-outline" data-eva-fill="#ffffff" data-eva-height="32" data-eva-width="32"></i>
                      </div>
-                     <h4>Prototyping</h4>
-                     <p class="lh-lg">Rapidly create 3D immersive and stereoscopic data visualisations from your Jupyter Notebooks interface.</p>
+                     <h4>Creation</h4>
+                     <p class="lh-lg">Rapidly create immersive data visualisations from your Jupyter Notebooks interface and view it using an HMD.</p>
                   </div>
                   <div class="feature col">
                      <div class="feature-icon bg-primary bg-gradient-orange">
                         <i data-eva="settings-outline" data-eva-fill="#ffffff" data-eva-height="32" data-eva-width="32"></i>
                      </div>
-                     <h4>Interaction</h4>
-                     <p class="lh-lg">Visualisations created with pyReality can be controlled from the Jupyter Notebooks interface while being viewed via an HMD.</p>
+                     <h4>Configuration</h4>
+                     <p class="lh-lg">Visualisation specifications can be controlled from the GUI or via Python code in Jupyter Notebooks.</p>
                   </div>
                   <div class="feature col">
                      <div class="feature-icon bg-primary bg-gradient-orange">
                         <i data-eva="flash-outline" data-eva-fill="#ffffff" data-eva-height="32" data-eva-width="32"></i>
                      </div>
                      <h4>Performance</h4>
-                     <p class="lh-lg">Built with VRIA, D3.js and BabylonJs, pyReality utilises WebGL to render large datasets quickly and efficiently.</p>
+                     <p class="lh-lg">Built with VRIA, D3.js and Babylon.js, pyReality utilises WebGL to render large datasets quickly and efficiently.</p>
                   </div>
                </div>
             </div>
@@ -125,18 +127,18 @@
                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
                   <div class="feature col">
                      <img src="assets/images/iscatter.png" width="100%" /><br/><br/>
-                     <h4>Immersive Scatterplot</h4>
-                     <p class="lh-lg">Rapidly create 3D immersive and stereoscopic data visualisations from your Jupyter Notebooks interface.</p>
+                     <h4>Immersive Scatter Plot</h4>
+                     <p class="lh-lg">pyReality uses Babylon.js to render an immersive scatterplot. While still in its infancy, the scatter plot allows users to configure basic parameters like input data, colour, size etc.</p>
                   </div>
                   <div class="feature col">
                      <img src="assets/images/sbar.png" width="100%" /><br/><br/>
-                     <h4>Stereoscopic Bar Chart</h4>
-                     <p class="lh-lg">Visualisations created with pyReality can be controlled from the Jupyter Notebooks interface while being viewed via an HMD.</p>
+                     <h4>3D Bar Chart</h4>
+                     <p class="lh-lg">pyReality uses VRIA to render 3D bar charts. The bar chart allows users to configure advanced parameters provided by VRIA based on Vega-lite grammar.</p>
                   </div>
                   <div class="feature col">
                      <img src="assets/images/sscatter.png" width="100%" /><br/><br/>
-                     <h4>Stereoscopic Scatterplot</h4>
-                     <p class="lh-lg">Built with VRIA, D3.js and BabylonJs, pyReality utilises WebGL to render large datasets quickly and efficiently.</p>
+                     <h4>3D Scatter Plot</h4>
+                     <p class="lh-lg">pyReality uses VRIA to render 3D scatter plots. The bar chart allows users to configure advanced parameters provided by VRIA based on Vega-lite grammar.</p>
                   </div>
                </div>
             </div>
@@ -171,8 +173,8 @@
                </div>
             </div>
          </div>
-         <footer class="pt-5 my-5 text-muted border-top">
-            Tashfeen Ahmed &middot; Design Informatics &copy; 2021
+         <footer class="pt-5 my-5 text-muted border-top text-center">
+            <a href="https://tashfeen.me" target="_blank">Tashfeen Ahmed</a> &middot; Design Informatics &copy; 2021
          </footer>
       </div>
       <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
